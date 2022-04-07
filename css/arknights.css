@@ -761,21 +761,21 @@ nav .navContent .navItem .navItemTitle {
 .navItem {
   transition: 0.6s;
 }
-main .search {
+.search {
   transition: 0.6s;
 }
-main .search .navItem.search-header {
+.search .navItem.search-header {
   width: calc(100% - 3em);
   transition: 0.6s;
   position: absolute;
   top: 40px;
   transform: unset;
 }
-main .search .navItem.search-header input {
+.search .navItem.search-header input {
   animation: get-out 0.6s;
 }
 @media (max-width: 1023px) {
-  main .search .navItem.search-header {
+  .search .navItem.search-header {
     top: 38px;
     width: calc(100% - 4em);
   }
@@ -794,7 +794,7 @@ main .search .navItem.search-header input {
   .search-popup {
     background-color: rgba(20,21,22,0.95);
   }
-  main .search-header::after {
+  .search-header::after {
     transition: 0.3s;
     z-index: -1;
     content: "";
@@ -805,17 +805,18 @@ main .search .navItem.search-header input {
     position: absolute;
     border-color: #fff;
   }
-  main .search-header:hover input::placeholder {
+  .search-header:hover input::placeholder {
     transition: 0.3s;
     color: #000;
   }
-  main .search-header:hover::after {
+  .search-header:hover::after {
     transition: 0.3s;
     width: calc(100% + 10px);
     background-color: #2bf;
   }
 }
 .search-popup {
+  pointer-events: all;
   height: calc(100% - 80px);
   z-index: 20;
   transition: 0.6s;
